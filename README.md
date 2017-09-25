@@ -22,16 +22,23 @@
 >> This is a menu driven program. The menu apprears as follows:
 
                                     ---MENU---
+                                    
                         1. Insert Node
                         2. Search Node
                         3. Display Tree
                         0. Exit
                         
                         Enter your choice: 
-
+                        
+>> As the user enters his choice, the switch case is called and accordingly, respective functions are called.
 >> In the src of the Trees each method has the following functions:
 
-            insert_tree(void *, int) // Declaration to receive tree in (void *) format and int to get the data which needs to be inserted.
-            search_tree(void *, int) // Declaration to receive tree in (void *) format and int to get the data which needs to be searched.
+            insert_tree(void *, int) // Declaration to receive tree in (void *) format and int for the data which needs to be inserted.
+            search_tree(void *, int) // Declaration to receive tree in (void *) format and int for the data which needs to be searched.
             display()                // Function will display the tree whenever called.
             
+# Implementations of Graphs
+>> For the Graphs, User is asked the total number of vertex which are present in the Graph.
+>> Accordingly, for each vertex, input of its neighbour, along with the distance(or Weight) from the neighbour to that vertex is asked to enter.
+>> Once this is complete, the tree is send to methods respective function and the result of either Prims Algorithm or the Single source Shortest Path finder Dijkstras Algorithm is Displayed.
+
