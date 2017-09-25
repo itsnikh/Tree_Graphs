@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-c -Wall
+LDFLAGS=-L ../include/Header.h
+SOURCES= ../src/Binary_search_tree.c
+OBJECTS=$(SOURCES:.c=.o)
+LIB_NAME=BINARY_SEARCH_TREE
+
+all: $(SOURCES) $(LIB_NAME)
+	    
+$(LIB_NAME): $(OBJECTS)
+	ar rcs $(LIB_NAME) $(OBJECTS)
+
+.c.o:
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -rf $(OBJECTS) $(LIB_NAME)
