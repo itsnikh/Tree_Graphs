@@ -1,0 +1,17 @@
+CC=gcc
+CFLAGS=-c -Wall
+LDFLAGS=-L ../include/Header.h
+SOURCES= ../src/mst_prims.c
+OBJECTS=$(SOURCES:.c=.o)
+LIB_NAME=PRIMS_ALGORITHM
+
+all: $(SOURCES) $(LIB_NAME)
+	    
+$(LIB_NAME): $(OBJECTS)
+	ar rcs $(LIB_NAME) $(OBJECTS)
+
+.c.o:
+	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -rf $(OBJECTS) $(LIB_NAME)
