@@ -7,7 +7,7 @@ Also, Prims Algorithm for Minimum Spanning Tree and Dijkstra's Algorithm for fin
 
 # Execution Procedure
 In each Method, there are 3 folders, namely,
-  include : Contains the Header .h file which needs to be included in the .c files.
-  src     : Contains the source Code for each method being implemented.
-  make    : Contains the makefile and the make library files.
+            include : Contains the Header .h file which needs to be included in the .c files.
+            src     : Contains the source Code for each method being implemented.
+            make    : Contains the makefile and the make library files.
   
